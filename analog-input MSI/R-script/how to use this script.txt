@@ -1,0 +1,10 @@
+Step 1) Acquire the RAW_to_ImZML() and all its subfunctions from the repository 'LAESI-MSI-Scripts-B_Bartels.et.al' of Dr. Purva Kulkarni 
+(purvakulkarni7).
+
+Step 2) Convert the Waters .RAW data into mzXML data with MassWolf (https://sourceforge.net/projects/sashimi/files/massWolf%20%28MassLynx%20converter%29/).
+
+Step 3) Copy the chromatogram list of the TIC and the analog channel from MassLynx into their own respective .txt. files.
+
+Step 4) Make use of the R-script provided here to convert the mzXML data into imzML data.
+
+Important Note: A square ROI and a line by line acquisition pattern is expected.
