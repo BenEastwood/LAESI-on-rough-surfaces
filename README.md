@@ -1,4 +1,4 @@
-### LAESI-on-rough-surfaces
+# LAESI-on-rough-surfaces
 LabVIEW VI for topographically-guided Laser Ablation Electrospray Ionization
 *caution* Additional software, which I am not allowed to upload here for proprietary reasons, is required for the VIs uploaded here to work properly. 
 - APT software from Thorlabs, in form of the approriate drivers forthe linear translation stages used in the sample manipulation system https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=8348
@@ -7,7 +7,7 @@ LabVIEW VI for topographically-guided Laser Ablation Electrospray Ionization
 - massWolf 4.3.1. (https://sourceforge.net/projects/sashimi/files/massWolf%20%28MassLynx%20converter%29/), for data conversion from Waters .RAW to .mzXML
 - additional R-Scripts for data conversion written by Dr. Purva Kulkarni (purvakulkarni7) can be found here: https://github.com/purvakulkarni7/LAESI-MSI-Scripts-B_Bartels.et.al/tree/master/R_scripts_analog_signal_correction
 
-# instrumentation used
+### instrumentation used
 laser:IR-Opolette HE (Opotek, Carlsbad CA, USA)
 linear translation stages: MZS50/M-Z8, MZS25/M-Z8, DDS220/M (Thorlabs, Newton NJ, USA) 
 distance sensor: IFS2405-1 + IFC2451 (Micro-Epsilon Messtechnik, Ortenburg, Germany)
