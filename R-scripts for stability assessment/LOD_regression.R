@@ -163,19 +163,16 @@ qqPlot(r16, main = " qq-plot m16 einfache quadr. Regression")
 
 ## determine LOD, by finding concentration that results in threshold intensity
  # 'concentration' data to predict intensity from
-  conc_data_classic_lod = data.frame(Concentration = seq(2.4, 2.5, by=0.005)) #lod intercept = 10 result: 2.445 µg/ml
-  conc_data_ionchambr_lod = data.frame(Concentration = seq(0.8, 1, by=0.005)) #lod intercept = 2 result: 0.860 µg/ml
-  conc_data_commerc_lod = data.frame(Concentration = seq(4.25, 4.75, by=0.005)) #lod intercept = 24 result: 4.335 µg/ml
-  conc_data_coax_lod = data.frame(Concentration = seq(32, 33, by=0.01)) # lod intercept = 8 result: 32.19 µg/ml.
+  conc_data_classic_lod = data.frame(Concentration = seq(2.4, 2.5, by=0.005)) #lod intercept = 10 result: 2.445 Âµg/ml
+  conc_data_ionchambr_lod = data.frame(Concentration = seq(0.8, 1, by=0.005)) #lod intercept = 2 result: 0.860 Âµg/ml
+  conc_data_commerc_lod = data.frame(Concentration = seq(4.25, 4.75, by=0.005)) #lod intercept = 24 result: 4.335 Âµg/ml
+  conc_data_coax_lod = data.frame(Concentration = seq(32, 33, by=0.01)) # lod intercept = 8 result: 32.19 Âµg/ml.
   
   predict(m18, conc_data_ionchambr_lod) #insert best model with variance correction and approrate sample data
   
-  # guestimate CIpredict intensity and read out LOD concentration
-  # 3 median values -> 2 degrees of freedom t-quantile for alpha = 0.005 in two sided test: 4.303
-  data_stat <- subset(regr, Concentration == 50) # choose Concentration closest two lod_concentration
-  lod_intercept <- 8
-  lod_concentration <- 32.19
-  t_quantile <- 4.303
-  sd <- sd(data_stat$med_intensity)
-  (sd/lod_intercept) * lod_concentration * t_quantile / sqrt(3)
+  # guestimate CI
+  # 3 median values -> 2 degrees of freedom t-quantile (t) for alpha = 0.05 in two sided test: 4.303
+  # estimate concentration values from the intensity values from concentration measured closest to determined LOD with PQ formula like (equation 6 in the appendix)
+  # determine standard deviation SD from concentration estimates
+  # CI = +/- (SD*t)/SQRT(n)
   detach(regr)
