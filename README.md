@@ -8,10 +8,10 @@ LabVIEW VI for topographically-guided Laser Ablation Electrospray Ionization
 - additional R-Scripts for data conversion written by Dr. Purva Kulkarni (purvakulkarni7) can be found here: https://github.com/purvakulkarni7/LAESI-MSI-Scripts-B_Bartels.et.al/tree/master/R_scripts_analog_signal_correction
 
 ### instrumentation used
-laser:IR-Opolette HE (Opotek, Carlsbad CA, USA)
-linear translation stages: MZS50/M-Z8, MZS25/M-Z8, DDS220/M (Thorlabs, Newton NJ, USA) 
-distance sensor: IFS2405-1 + IFC2451 (Micro-Epsilon Messtechnik, Ortenburg, Germany)
-mass spectrometer: Synapt HDMS (Waters, Milford MA, USA)
+laser:IR-Opolette HE (Opotek, Carlsbad CA, USA),
+linear translation stages: MZS50/M-Z8, MZS25/M-Z8, DDS220/M (Thorlabs, Newton NJ, USA),
+distance sensor: IFS2405-1 + IFC2451 (Micro-Epsilon Messtechnik, Ortenburg, Germany),
+mass spectrometer: Synapt HDMS (Waters, Milford MA, USA),
 
 ## analog-input MSI
 The folder 'analog-input MSI' contains the main VI 'Scan_Ablation_Burst_FindFocus_HighResIntegral_CC' for analog-input MSI and the necessary subVIs, which might require access to the proprietary drivers and subVIs listed above.
