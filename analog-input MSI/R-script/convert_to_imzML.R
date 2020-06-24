@@ -15,7 +15,7 @@ massWolf --mzXML C:\MassLynx\Default.pro\Data\file.raw C:\MassLynx\Default.pro\D
 # Enter the number of rows (Y steps)(integer)
 # Enter the number of columns (X steps)(integer)
 # Enter the number of replicates on the plate for a single acquisition(integer)
-
+#e.g.:
 RAW_to_ImZML()
 180720_NEG_Thaliana_Leaf_bottom_2_Pierced_1249
 W:\Data_Synapt\2018\zzhaoyu\mzXML\180720_NEG_Thaliana_Leaf_bottom_2_Pierced_1249_Analog.txt
